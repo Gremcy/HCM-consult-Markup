@@ -1,0 +1,238 @@
+.search-result-page {
+  width: 100%;
+  padding-top: 110px;
+  .header-search-btn {
+    pointer-events: none;
+  }
+  @include md {
+    padding-top: 120px;
+  }
+  @include sm {
+    padding-top: 73px;
+  }
+}
+
+.search-result-main {
+  width: 100%;
+  min-height: calc(100vh - 216px);
+  @include sm {
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+}
+
+.result-categories {
+  max-width: 1360px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+  @include sm {
+    padding: 0;
+  }
+}
+.result-categories-item {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #526b95;
+  margin-right: 30px;
+  position: relative;
+  &.active {
+    color: #f07d00;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      bottom: -8px;
+      left: 50%;
+      border-radius: 50%;
+      transform: translatex(-50%);
+      background: #f07d00;
+    }
+  }
+  @include sm {
+    font-size: 13px;
+    line-height: 150%;
+    margin-right: 20px;
+  }
+}
+
+.result-container-1280 {
+  max-width: 1360px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include md {
+    padding: 0 30px;
+  }
+  @include sm {
+    padding: 0;
+  }
+}
+.result-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #1e285a;
+  margin-bottom: 28px;
+  &:last-child {
+    bottom: none;
+  }
+  &:hover {
+    .result-item-button {
+      background: #1e285a;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  @include sm {
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+}
+.result-item-left {
+  width: 70%;
+  @include sm {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.result-item-left-category {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #526b95;
+  margin-bottom: 10px;
+  @include sm {
+    font-size: 12px;
+    line-height: 150%;
+    color: #97a0af;
+  }
+}
+.result-item-left-date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #97a0af;
+  margin: 10px 0 0px;
+  @include sm {
+    font-size: 12px;
+  }
+}
+.result-item-left-heading {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #1e285a;
+  margin-bottom: 12px;
+  &::selection {
+    background: #f07d00;
+  }
+}
+.result-item-left-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1e285a;
+  &::selection {
+    background: #f07d00;
+  }
+  strong {
+    font-weight: 700;
+  }
+  em {
+    font-style: italic;
+  }
+}
+.result-item-right {
+  @include sm {
+    width: 100%;
+  }
+}
+.result-item-button {
+  width: 50px;
+  height: 50px;
+  border: 1.47059px solid #1e285a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include sm {
+    width: 34px;
+    height: 34px;
+    margin-left: auto;
+    svg {
+      width: 8px;
+    }
+  }
+}
+
+.result-input {
+  width: 540px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #1e285a;
+  input {
+    width: 80%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #525f73;
+    border: none;
+    padding-left: 12px;
+  }
+  @include md {
+    margin-bottom: 40px;
+  }
+  @include sm {
+    width: 100%;
+    margin-bottom: 31px;
+  }
+}
+.result-input-btn {
+  width: 34px;
+  height: 34px;
+  border: 1.47059px solid #1e285a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  bottom: none;
+  background: transparent;
+  svg {
+    width: 8px;
+  }
+  &:hover {
+    background: #1e285a;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.social-engagement-page {
+  padding-top: 100px;
+  @include md {
+    padding-top: 80px;
+  }
+  @include sm {
+    padding-top: 66px;
+  }
+}
+
+.social-articles {
+  display: flex;
+  align-items: flex-start;
+}
+
+.articles-list {
+  padding: 40px 0 195px;
+  width: 955px;
+  &__item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #1e285a;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 70px;
+  }
+  @include md {
+    max-width: initial;
+  }
+  @include sm {
+    padding: 24px 0 80px;
+  }
+}
+
+.article {
+  &__header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > p.title {
+      max-width: 845px;
+    }
+  }
+  &__button {
+    border: 1px solid #1e285a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    & > span {
+      width: 22px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #1e285a;
+      transition: transform 0.3s ease 0s;
+    }
+    & > span:last-child {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+  & > p.description {
+    max-width: 845px;
+    height: 0px;
+    margin-bottom: 0;
+    overflow: hidden;
+    transition: height 0.3s ease 0s;
+  }
+  &.open & {
+    &__button {
+      & > span:last-child {
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease 0s;
+      }
+    }
+  }
+  &.open > p.description {
+    margin-bottom: 60px;
+    height: auto;
+    transition: height 0.3s ease 0s;
+  }
+  @include md {
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+      & > p.title {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: initial;
+      }
+    }
+    &__image {
+      width: 100%;
+    }
+    & > p.description {
+      max-width: initial;
+    }
+  }
+  @include sm {
+    &__header {
+      margin-bottom: 36px;
+    }
+    &.open > p.description {
+      margin-bottom: 36px;
+    }
+  }
+}

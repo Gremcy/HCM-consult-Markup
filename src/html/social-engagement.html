@@ -1,0 +1,102 @@
+{% set body_class = "social-engagement-page" %} {% extends "./_layout.html" %}
+{% block content %}
+<main class="social-main">
+  <section class="about-hero">
+    <div class="about-hero-overlay"></div>
+    <div class="about-hero-image">
+      <img
+        src="./images/social-engagement/social-engagement__hero-image.jpg"
+        alt="image"
+      />
+    </div>
+    <div class="about-hero-1280">
+      <div class="about-hero-title">Social Engagement</div>
+      <div class="about-hero-description">
+        Acting accountable and responsible is not only one of our foundations in
+        working with our customers, but also a core principle in our corporate
+        social and environmental responsibility strategy. Through multiple
+        engagements, we help people thrive to their highest potential from the
+        ground up and foster biodiversity for a sustainable environment.
+      </div>
+    </div>
+  </section>
+  <section class="social-articles container-1280">
+    <ul class="social-articles__articles-list articles-list">
+      <li class="articles-list__item">
+        <article class="articles-list__article article">
+          <div class="article__header">
+            <p class="title">
+              HCM sponsorship campaign: investment in our future
+            </p>
+            <div class="article__button">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <p
+            class="article__description description secondary"
+            style="height: 0px"
+          >
+            A widespread problem in German schools is the inadequate technical
+            equipment and insufficient inclusion of technological aids in the
+            classroom. While private use of smartphones, tablets and the like is
+            easy for children and adolescents, German schoolchildren are only in
+            the middle in terms of their computer and information-related
+            skills, according to the results of the international comparative
+            study ICILIS. This result proves that “the widespread assumption
+            that children and adolescents would automatically become competent
+            users of digital media as a result of growing up in a world shaped
+            by new technologies” does not apply. Media literacy and the safe
+            handling of IT applications are anchored in the requirement profiles
+            for employees and some of the basic requirements for later success
+            in the job. By making a SMART interactive whiteboard available in a
+            primary school in Rhineland-Palatinate, we want to help ensure that
+            schoolchildren are introduced to the safe and controlled use of such
+            technologies in a playful manner.
+          </p>
+          <img
+            src="./images/social-engagement/social-engagement__article-image_1.jpg"
+            alt="article image"
+            class="article__image"
+          />
+        </article>
+      </li>
+      <li class="articles-list__item">
+        <article class="articles-list__article article">
+          <div class="article__header">
+            <p class="title">
+              Connected to our environment – the HCM Consultant Group promotes
+              biodiversity
+            </p>
+            <div class="article__button">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <p
+            class="article__description description secondary"
+            style="height: 0px"
+          >
+            Another sharp decline in bees in our environment would have a
+            dramatic impact on plant biodiversity. Therefore, bees are not only
+            extremely important for agriculture, we would also have to do
+            without the colorful flowers in cities: insects, birds and other
+            animals that rely on plants as a food source would starve.
+            Therefore, the HCM and its employees have been taking care of 3 bee
+            colonies since 2016 to make a small contribution to the continued
+            existence of the diversity and beauty of our immediate environment.
+          </p>
+          <img
+            src="./images/social-engagement/social-engagement__article-image_2.jpg"
+            alt="article image"
+            class="article__image"
+          />
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

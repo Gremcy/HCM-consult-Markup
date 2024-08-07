@@ -1,0 +1,234 @@
+@import "components/_reset";
+@import "components/_fonts";
+@import "components/_mixins";
+@import "components/_helpers";
+@import "libs/index";
+
+@import "components/_index";
+@import "components/_modal";
+@import "components/_menu";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_about";
+@import "components/_social";
+@import "components/_projects";
+@import "components/_projects-popup";
+
+@import "components/_reset";
+@import "components/_fonts";
+@import "components/_mixins";
+@import "components/_helpers";
+
+@import "components/_index";
+@import "components/_modal";
+@import "components/_menu";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_about";
+@import "components/_social";
+@import "components/_projects";
+@import "components/_blog";
+@import "components/_article";
+@import "components/_services";
+@import "components/_service-page";
+@import "components/_work-with-us";
+@import "components/_404";
+@import "components/_search-result";
+@import "components/_cookies";
+
+html,
+body {
+  font-family: "CenturyGothic";
+  font-weight: 400;
+  input {
+    font-family: "CenturyGothic";
+    font-weight: 400;
+  }
+  &.is-hidden {
+    height: 100%;
+    width: 100%;
+    //position: fixed;
+    overflow: hidden;
+  }
+}
+html {
+  // scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #525f73;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #525f73;
+  strong {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #525f73;
+  }
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #525f73;
+  }
+  em {
+    font-style: italic;
+  }
+}
+
+ul {
+  margin-left: 26px;
+  li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #525f73;
+    margin-bottom: 15px;
+    position: relative;
+    strong {
+      font-weight: 700;
+    }
+    span {
+      color: #525f73;
+    }
+    em {
+      font-style: italic;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -25px;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #c85904;
+    }
+    @include sm {
+      font-size: 14px;
+    }
+  }
+}
+ol {
+  margin-left: 39px;
+  li {
+    list-style: decimal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #525f73;
+    margin-bottom: 15px;
+    position: relative;
+    strong {
+      font-weight: 700;
+    }
+    span {
+      color: #525f73;
+    }
+    em {
+      font-style: italic;
+    }
+    @include sm {
+      font-size: 14px;
+    }
+  }
+}
+del {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #525f73;
+  text-decoration: line-through;
+}
+
+.container-1280 {
+  max-width: 1360px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+  @include md {
+    padding: 0 30px;
+  }
+  @include sm {
+    padding: 0 20px;
+  }
+}
+.title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  color: #1e285a;
+  @include sm {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.title-s {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #1e285a;
+  @include sm {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #1e285a;
+  @include sm {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1e285a;
+  @include sm {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.secondary {
+  color: #525f73;
+}
+.white {
+  color: #ffffff;
+}
+.warning {
+  color: #c85904;
+}
+
+.menu-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(235, 235, 235, 0.8);
+  backdrop-filter: blur(50px);
+  display: none;
+  z-index: 10;
+  &.show {
+    display: block;
+  }
+}

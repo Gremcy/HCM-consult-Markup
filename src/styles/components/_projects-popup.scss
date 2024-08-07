@@ -1,0 +1,121 @@
+.modal {
+  &.projects {
+    overflow-x: hidden;
+    .modal__overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #525f73;
+      mix-blend-mode: multiply;
+      @include sm {
+        display: none;
+      }
+    }
+    .modal__content {
+      width: 95%;
+      max-width: 1280px;
+      height: 91%;
+      overflow-y: scroll;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      background: #eef6fa;
+      @include md {
+      }
+      @include sm {
+        // height: auto;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        padding: 0;
+      }
+
+      .projects-popup {
+        &__content {
+          width: 100%;
+          height: 100%;
+          padding: 60px 105px;
+          @include md {
+            padding: 60px 50px;
+          }
+          @include sm {
+            padding: 55px 20px 0;
+          }
+        }
+        &__download {
+          display: inline-flex;
+          align-items: center;
+          padding: 35px 0;
+          & > img {
+            margin-right: 20px;
+          }
+        }
+        &__image {
+          width: 100%;
+          height: 42vw;
+          max-height: 575px;
+          margin-bottom: 50px;
+          @include md {
+            height: 45vw;
+          }
+        }
+        &__item {
+          display: grid;
+          grid-template-columns: 222px 1fr;
+          padding: 20px 0 50px;
+          border-top: 1px solid #525f73;
+          & > div > p.description:not(:last-child) {
+            margin-bottom: 20px;
+          }
+          &::before {
+            display: none;
+          }
+          @include sm {
+            grid-template-columns: 1fr;
+            & > div > p.description:not(:last-child) {
+              margin-bottom: 10px;
+            }
+            & > p.subtitle {
+              margin-bottom: 16px;
+            }
+          }
+        }
+        &__item:last-child {
+          padding-bottom: 130px;
+          @include sm {
+            padding-bottom: 80px;
+          }
+        }
+        &-content__list {
+          @include sm {
+            padding-left: 26px;
+          }
+        }
+        &-content__item {
+          position: relative;
+        }
+        &-content__item:not(:last-child) {
+          margin-bottom: 2px;
+        }
+
+        &-content__item::before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          left: -26px;
+          top: 50%;
+          transform: translateY(-50%);
+          border: 1px solid #c85904;
+        }
+      }
+    }
+  }
+}

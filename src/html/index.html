@@ -1,0 +1,306 @@
+{% set body_class = "home-page" %}
+{% extends "./_layout.html" %}
+
+{% block content %}
+<main class="home">
+
+  <div class="home-hero-fluid">
+    <div class="home-hero-1280">
+      <div class="home-hero-left">
+        <div class="home-hero-left-title">
+          WE MANAGE PEOPLE
+        </div>
+        <div class="home-hero-left-description">
+          <strong>HCM Consultant Group</strong> is the global consulting company and center of excellence for
+          implementing state of the
+          art business solutions and <em>business processes</e>.
+        </div>
+        <div class="home-hero-left-bottom">
+          <a href="/about.html" class="home-hero-left-more-btn">
+            More about us
+          </a>
+          <div class="home-hero-left-video-btn js-modal-link" data-target="video-popup">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.3999 12.205V6.60004L12.4889 9.44705L7.3999 12.205Z"
+                fill="#C85904" />
+              <circle cx="9.4002" cy="9.39995" r="8.8" stroke="#C85904" stroke-width="0.8" />
+            </svg>
+            <span>More about us</span>
+          </div>
+        </div>
+      </div>
+      <div class="home-hero-right">
+        <img src="/images/26.jpg" alt="image">
+        <video preload="auto" no-controls autoplay loop playsinline muted>
+          <source src="/stock.mp4" type='video/mp4' />
+        </video>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="home-what-fluid">
+    <div class="home-what-1280">
+      <div class="home-what-left">
+        What <br>We Do
+      </div>
+      <div class="home-what-right">
+        <div class="home-what-container">
+          <div class="home-what-item">
+            <div class="home-what-item-name">
+              Founded
+            </div>
+            <div class="home-what-item-number">
+              2009
+            </div>
+          </div>
+          <div class="home-what-item">
+            <div class="home-what-item-name">
+              Expirience
+            </div>
+            <div class="home-what-item-number">
+              20+
+            </div>
+          </div>
+          <div class="home-what-item">
+            <div class="home-what-item-name">
+              Customers
+            </div>
+            <div class="home-what-item-number">
+              50+
+            </div>
+          </div>
+          <div class="home-what-item">
+            <div class="home-what-item-name">
+              Projects
+            </div>
+            <div class="home-what-item-number">
+              200+
+            </div>
+          </div>
+        </div>
+        <div class="home-what-description">
+          We have a deep knowledge and understanding of our customer setup and business environment. Our insights, our
+          network, and our know how enable us to run our customer projects seamlessly and bring them to success. By
+          taking our customers by the hand we lead them through the entire project lifecycle and execute complex
+          transformation projects.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-services-fluid">
+    <div class="home-services-background-image">
+      <img src="/images/2.jpg" alt="img">
+    </div>
+    <div class="home-services-background-overlay">
+    </div>
+    <div class="home-services-1280">
+      <div class="home-services-left">
+        Our <br>Services
+      </div>
+      <div class="home-services-right">
+        <div class="home-services-container">
+          <div class="home-services-item">
+            <div class="home-services-item__num">
+              01
+            </div>
+            <div class="home-services-item__title">
+              HR Consulting
+            </div>
+            <div class="home-services-item__description">
+              HR System landscapes are constantly changing. We support you during your HR transformation projects,
+              focusing on state-of-the-art software solutions while incorporating best practices and current HR trends.
+            </div>
+            <a href="/" class="home-services-item__btn">
+              <div class="home-services-item__btn-circle">
+                <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="home-services-item">
+            <div class="home-services-item__num">
+              02
+            </div>
+            <div class="home-services-item__title">
+              IT Consulting
+            </div>
+            <div class="home-services-item__description">
+              A company’s technological infrastructure is a key contributor to its organizational success. We always
+              have your strategic goals in mind when developing future-oriented solutions tailored to your needs.
+            </div>
+            <a href="/" class="home-services-item__btn">
+              <div class="home-services-item__btn-circle">
+                <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="home-services-item">
+            <div class="home-services-item__num">
+              03
+            </div>
+            <div class="home-services-item__title">
+              Managment consulting
+            </div>
+            <div class="home-services-item__description">
+              The successful realization of a project needs a reliable management of time, budget, quality, risks,
+              scope, and benefits. We always pay special attention to the employees who are affected by the change.
+            </div>
+            <a href="/" class="home-services-item__btn">
+              <div class="home-services-item__btn-circle">
+                <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="home-services-item">
+            <div class="home-services-item__num">
+              04
+            </div>
+            <div class="home-services-item__title">
+              Training and Development
+            </div>
+            <div class="home-services-item__description">
+              Training and development of talents is a fundamental organizational task to remain competitive. We provide
+              support in the fields of Organizational and Leadership Development, Project Coaching and Training.
+            </div>
+            <a href="/" class="home-services-item__btn">
+              <div class="home-services-item__btn-circle">
+                <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-projects-fluid">
+    <div class="home-projects-1280">
+      <div class="home-projects-left">
+        <div class="home-projects-left-title">
+          Projects
+        </div>
+        <a href="/" class="home-projects-left-more-btn">
+          See more projects
+        </a>
+      </div>
+      <div class="home-projects-right">
+        <div class="home-projects-container">
+          <a href="/" class="home-projects-item">
+            <div class="home-projects-item-image">
+              <img src="/images/3.jpg" alt="img">
+            </div>
+            <div class="home-projects-item-center">
+              <div class="home-projects-item-center-name">
+                HR Cloud Provider Selection
+              </div>
+              <div class="home-projects-item-center-date">
+                01 April 2022
+              </div>
+            </div>
+            <div class="home-projects-item__btn">
+              <div class="home-projects-item__btn-circle">
+                <svg viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="/" class="home-projects-item">
+            <div class="home-projects-item-image">
+              <img src="/images/4.jpg" alt="img">
+            </div>
+            <div class="home-projects-item-center">
+              <div class="home-projects-item-center-name">
+                implementation of a globally uniform learning management process and cloud system
+              </div>
+              <div class="home-projects-item-center-date">
+                01 April 2022
+              </div>
+            </div>
+            <div class="home-projects-item__btn">
+              <div class="home-projects-item__btn-circle">
+                <svg viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a href="/" class="home-projects-item">
+            <div class="home-projects-item-image">
+              <img src="/images/5.jpg" alt="img">
+            </div>
+            <div class="home-projects-item-center">
+              <div class="home-projects-item-center-name">
+                Successful Project Management Audit at a DAX Company
+              </div>
+              <div class="home-projects-item-center-date">
+                01 April 2022
+              </div>
+            </div>
+            <div class="home-projects-item__btn">
+              <div class="home-projects-item__btn-circle">
+                <svg viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-contact-fluid">
+    <div class="home-contact-1280">
+      <div class="home-bottom-circle">
+        <div class="home-bottom-circle-inner"></div>
+      </div>
+      <div class="home-contact-left">
+        Let’s Talk
+      </div>
+      <div class="home-contact-right">
+        <a href="mailto:info@hcmconsult.com" class="home-contact-email">
+          info@hcmconsult.com
+        </a>
+        <div class="home-contact-description">
+          If you have any questions, please do not hesitate to contact us.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</main>
+{% include './components/_footer.html' %}
+{% endblock %}
+
+{% block footer_scripts %}
+
+{% endblock %}
